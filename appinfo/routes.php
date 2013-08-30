@@ -38,8 +38,8 @@ $this->create('registration_index', '/')->get()->action(
 	}
 );
 
-$this->create('registration_form', '/test')->get()->action(
+$this->create('registration_form', '/new_user')->action(
 	function($params){
-		App::main('PageController', 'ryan', $params, new DIContainer());
+		App::main('PageController', 'new_user', $params, new DIContainer());
 	}
 );

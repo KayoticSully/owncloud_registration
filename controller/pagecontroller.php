@@ -57,7 +57,7 @@ class PageController extends Controller {
 	 * @IsSubAdminExemption
 	 * @CSRFExemption
 	 */
-	public function ryan() {
+	public function new_user() {
 		
 		$parameters = array();
 		//foreach( $errors as $key => $value ) {
