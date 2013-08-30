@@ -1,0 +1,26 @@
+{
+	"name": "registration",
+	"description": "Adds user registration capability and management",
+	"version": "0.0.1",
+	"private": true,
+	"homepage": "https://github.com/owncloud/registration",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:owncloud/registration.git"
+	},
+	"bugs": "https://github.com/owncloud/registration/issues",
+	"dependencies": {},
+	"devDependencies": {
+		"grunt": "*",
+		"grunt-cli": "*",
+		"grunt-contrib-concat": "*",
+		"grunt-contrib-jshint": "*",
+		"grunt-contrib-watch": "*",
+		"karma": "*",
+		"grunt-karma": "*",
+		"grunt-wrap": "*",
+		"phantomjs": "*",
+		"grunt-phpunit": "*"
+	},
+	"engine": "node >= 0.8"
+}

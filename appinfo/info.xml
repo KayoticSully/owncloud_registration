@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<info>
+	<id>registration</id>
+	<name>Registration</name>
+	<description>Adds user registration capability and management</description>
+	<licence>AGPLv3</licence>
+	<author>Ryan Sullivan</author>
+	<version>0.001</version>
+	<require>5.0.0</require>
+</info>
