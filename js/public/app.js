@@ -4,10 +4,10 @@
 
 'use strict';
 
-angular.module('Registration', ['Restangular']).
+angular.module('Registration', ['restangular']).
 	config(
-		['$routeProvider', '$interpolateProvider', '$windowProvider',
-		function ($routeProvider, $interpolateProvider, $windowProvider) {
+		['$routeProvider', '$interpolateProvider', '$windowProvider', '$httpProvider', 'RestangularProvider',
+		function ($routeProvider, $interpolateProvider, $windowProvider, $httpProvider, RestangularProvider) {
 
 	$routeProvider.when('/', {
 		templateUrl: 'main.html',

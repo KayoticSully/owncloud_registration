@@ -37,3 +37,9 @@ $this->create('registration_index', '/')->get()->action(
 		App::main('PageController', 'index', $params, new DIContainer());
 	}
 );
+
+$this->create('registration_form', '/test')->get()->action(
+	function($params){
+		App::main('PageController', 'ryan', $params, new DIContainer());
+	}
+);

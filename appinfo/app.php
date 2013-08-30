@@ -38,6 +38,7 @@ if(\OCP\App::isEnabled('appframework')){
 
     if( ! $api->isLoggedIn()) {
         $api->addScript('registration_link');
+        $api->addStyle('form');
     } else if($api->isAdminUser($api->getUserId())) {
         $api->addNavigationEntry(array(
             

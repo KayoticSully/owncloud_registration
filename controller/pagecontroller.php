@@ -50,6 +50,33 @@ class PageController extends Controller {
 	public function index() {
 		return $this->render('main');
 	}
+	
+	/**
+	 * @IsLoggedInExemption
+	 * @IsAdminExemption
+	 * @IsSubAdminExemption
+	 * @CSRFExemption
+	 */
+	public function ryan() {
+		
+		$parameters = array();
+		//foreach( $errors as $key => $value ) {
+		//	$parameters[$value] = true;
+		//}
+		
+		if (!empty($_POST['user'])) {
+			$parameters["username"] = $_POST['user'];
+			$parameters['user_autofocus'] = false;
+		} else {
+			$parameters["username"] = '';
+			$parameters['user_autofocus'] = true;
+		}
+		if (isset($_REQUEST['redirect_url'])) {
+			$redirect_url = $_REQUEST['redirect_url'];
+			$parameters['redirect_url'] = urlencode($redirect_url);
+		}
 
-
+		//$parameters['alt_login'] = OC_App::getAlternativeLogIns();
+		\OC_Template::printGuestPage("registration", "form", $parameters);
+	}
 }

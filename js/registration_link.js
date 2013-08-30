@@ -20,12 +20,21 @@
  *
  */
 
-$(document).ready(function(){
-    $('#login form').append(
+OC.Router.registerLoadedCallback(function(){
+    $('#login > form[id != register]').append(
         '<div class="center">' +
             t('registration', 'Don\'t have an account?') + ' ' +
-            '<a class="button" href="#">' +
+            '<a class="button" href="' + OC.Router.generate('registration_form') + '">' +
                 t('registration', 'Register') +
+            '</a>' +
+        '</div>'
+    );
+    
+    $('#login > form[id = register]').append(
+        '<div class="center">' +
+            t('registration', 'Already have an account?') + ' ' +
+            '<a class="button" href="/">' +
+                t('registration', 'Login') +
             '</a>' +
         '</div>'
     );
