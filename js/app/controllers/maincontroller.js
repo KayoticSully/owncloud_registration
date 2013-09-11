@@ -23,8 +23,8 @@
 
 
 angular.module('Registration').controller('MainController',
-	['$scope', '$routeParams', function ($scope, $routeParams) {
-
-	$scope.id = $routeParams.id;
-
+    ['$scope', '$routeParams', function ($scope, $routeParams) {
+    
+    $scope.id = $routeParams.id;
+    $scope.test = 42;
 }]);

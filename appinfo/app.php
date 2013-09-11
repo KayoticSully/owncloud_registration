@@ -34,7 +34,7 @@ if(\OCP\App::isEnabled('appframework')){
     $api = new API('registration');
 
     // uncomment the next line to activate the admin interface
-    $api->registerAdmin('admin/settings');
+    //$api->registerAdmin('admin/settings');
 
     if( ! $api->isLoggedIn()) {
         $api->addScript('registration_link');
