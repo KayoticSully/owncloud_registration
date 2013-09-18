@@ -4,7 +4,7 @@
 
 'use strict';
 
-angular.module('Registration', ['restangular']).
+angular.module('Registration', ['OC', 'restangular']).
 	config(
 		['$routeProvider', '$interpolateProvider', '$windowProvider', '$httpProvider', 'RestangularProvider',
 		function ($routeProvider, $interpolateProvider, $windowProvider, $httpProvider, RestangularProvider) {

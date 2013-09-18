@@ -33,6 +33,7 @@ try {
         "username" => $username,
         "groups" => OC_Group::getUserGroups( $username )
     )));
+    
 } catch (Exception $exception) {
     OC_JSON::error(array("data" => array( "message" => $exception->getMessage())));
 }

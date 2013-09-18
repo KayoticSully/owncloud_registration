@@ -1,7 +1,9 @@
 
 {{ script('vendor/angular/angular') }}
 {{ script('vendor/underscore/underscore') }}
+{{ script('public/app', 'appframework') }}
 {{ script('vendor/restangular/restangular') }}
+
 {{ script('public/app') }}
 {{ style('style') }}
 
